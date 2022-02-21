@@ -53,3 +53,66 @@ img {
     font-family: 'Montserrat';
     font-size: 16px;
 }
+
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation li{
+    display: inline-block;
+    margin-left: 70px;
+
+    position: relative;
+    
+}
+
+.navigation a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.navigation a:hover {
+    color: #000;
+}
+
+.navigation a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+
+}
+
+.navigation a:hover::before {
+    width: 100%;
+}
+
+
+
+footer a {
+	color: palevioletred;
+	padding: 1em;
+	text-align: center;
+    text-align: center;
+}
+
+footer { 
+    font-size: 1em;
+    color: white;
+	background-color: black;
+ 	text-align: center;
+	margin-top: 10em;
+	margin-left: -2em;
+	margin-right: -2em;
+	padding: -1em;
+}
