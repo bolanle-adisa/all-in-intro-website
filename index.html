@@ -9,32 +9,31 @@
 </head>
 
 <style>body {background-color: rgb(114, 98, 98);}</style>
-<body theme="light">
-    <header>
-        <div class = "header">
-            <div class = "inner_header">
-                <div class = "logo_container">
-                    <h1>MY <span>PORTFOLIO</span></h1>
-                </div>
-                <ul class = "navigation">
-                    <li>
-                        <a href= "index.html"><span>Home</span> </a>
-                    </li>
-                    <li>
-                        <a href= "about.html"><span>About</span></a>
-                    </li>
-                    <li>
-                        <a href= "experience.html"><span>Experience</span></a>
-                    </li>
-                    <li>
-                        <a href= "https://docs.google.com/document/d/1xhoQ6Mlh2-tLVOEITl2fh8_m310QxCT3uGKdVnkn9nc/edit"><span>Resume</span></a>
-                    </li>
-                    <li>
-                        <div class="container">
-        <input type="checkbox" id="theme-toggle">
-        <label for="theme-toggle"></label>
-      </div>
-                    </li>
+
+<header>
+    <div class = "header">
+        <div class = "inner_header">
+            <div class = "logo_container">
+                <h1>MY <span>PORTFOLIO</span></h1>
+            </div>
+            <ul class = "navigation">
+                <li>
+                    <a href= "index.html"><span>Home</span> </a>
+                </li>
+                <li>
+                    <a href= "about.html"><span>About</span></a>
+                </li>
+                <li>
+                    <a href= "experience.html"><span>Experience</span></a>
+                </li>
+                <li>
+                    <a href= "https://docs.google.com/document/d/1xhoQ6Mlh2-tLVOEITl2fh8_m310QxCT3uGKdVnkn9nc/edit"><span>Resume</span></a>
+                </li>
+                <li>
+                    <div id="toggle">
+        <i class="indicator"><span>mode</span></i>
+    </div>
+                </li>
 
                <!-- <span style = "position: relative; top: 10px; left: 20px;"><button onclick="darkMode()">Mode</button></span>-->
             
@@ -65,21 +64,15 @@
             </p>  
         </div>
     </div>
+
     <script>
-        document.getElementById('theme-toggle').addEventListener('click', (e) => {
-  const checked = e.target.checked;
-  document.body.setAttribute('theme', checked ? 'dark' : 'light');
-});
-    </script>
-    
-    <!-----<script>
         const body = document.querySelector('body');
         const toggle = document.getElementById('toggle');
         toggle.onclick = function(){
             toggle.classList.toggle('active');
             body.classList.toggle('active');
         }
-    </script>---->
+    </script>
 <!--<script>
     function theGreatest() {
       var x = document.getElementById("navigation");
