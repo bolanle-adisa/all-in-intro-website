@@ -14,14 +14,12 @@ img {
     width: 100%;
     height: 80px;
     display: block;
-    background-color: black;
 }
 .inner_header{
     width: 1000px;
     height: 100%;
     display: block;
     margin: 0 auto;
-    background-color: palevioletred;
 }
 .logo_container{
     height: 30%;
@@ -208,7 +206,7 @@ footer {
         padding-top: 2rem;
     }
 }
-
+/*
 #toggle{
     position: relative;
     float: right;
@@ -253,7 +251,7 @@ footer {
                 inset 0 -4px 4px rgba(255,255,255,1);
 
 }
-
+*/
 /*Add css styling for dark mode*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
