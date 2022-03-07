@@ -224,7 +224,7 @@ body {
 .container {
   padding: 80px 20px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
