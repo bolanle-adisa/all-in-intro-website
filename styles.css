@@ -27,7 +27,6 @@ img {
     float: left;
 }
 .logo_container h1{
-    color: white;
     height: 100%;
     display: table-cell;
     vertical-align: middle;
@@ -51,7 +50,6 @@ img {
 .navigation a li{
     display: table-cell;
     vertical-align: middle;
-    color: white;
     font-family: 'Montserrat';
     font-size: 16px;
 }
@@ -71,7 +69,6 @@ img {
 }
 
 .navigation a{
-    color: white;
     text-decoration: none;
     text-transform: uppercase;
     
@@ -175,13 +172,11 @@ footer {
 /* animations / utilities */
 .section-2 a:hover{
     font-size: 1.3rem;
-    color: #fff;
     cursor: pointer;
     transition: 0.2s;
 }
 
 .section-1 a:hover{
-    color: #ffffff;
     cursor: pointer;
     transition: 0.3s;
 }
