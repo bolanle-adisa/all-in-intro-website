@@ -258,63 +258,59 @@ footer {
 }
 
 /*Add css styling for dark mode*/
-body {
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  user-select: none;
-}
-
-body[theme=dark] {
-  background: #000;
-  color: #fff;
-}
-
-#hybrid {
-  visibility: hidden;
-}
-
-#theme-toggle {
-  visibility: hidden;
-}
-
-#theme-toggle + label {
-  content: '';
-  display: inline-block;
-  cursor: pointer;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  transition: all 0.3s ease-in-out;
-}
-
-#theme-toggle:not(:checked) + label {
-  background-color: gold;
-}
-
-#theme-toggle:checked + label {
-  background-color: transparent;
-  box-shadow: inset -18px -16px 1px 1px #fff;
-}
-
-.intro-text {
-  position: fixed;
-  top: 180px;
-  font-size: 1.6em;
-  font-family: monospace;
-}
-
-[class^=text-] {
-  transition: color 0.2s ease-in-ease-out;
-}
-
-body[theme=dark] .text-sun {
-  color: #222;
-}
-
-body[theme=light] .text-moon {
-  color: #ddd;
-}
+* {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
+  }
+  body.dark {
+    background-color: #292c35;
+  }
+  .checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .label {
+    width: 50px;
+    height: 26px;
+    background-color:#111;
+    display: flex;
+    border-radius:50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+  }
+  
+  .ball {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  /*  target the elemenent after the label*/
+  .checkbox:checked + .label .ball{
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: pink;
+  }
+  
+  .fa-sun {
+    color: yellow;
+  }
 /*End of css styling for dark mode*/
